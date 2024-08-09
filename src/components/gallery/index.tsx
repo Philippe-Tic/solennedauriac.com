@@ -35,12 +35,20 @@ export const Gallery = () => {
       <div className="flex flex-row lg:flex-col lg:px-16 pb-8 lg:py-8 gap-8">
         <h1>Mes Projets</h1>
         <div className="hidden lg:flex flex-col gap-8">
-          <Button onClick={handleSetActiveGallery(GalleryType.GRAPHISM)} variant="nav">Graphisme</Button>
-          <Button onClick={handleSetActiveGallery(GalleryType.COMMUNICATION)} variant="nav">Communication</Button>
-          <Button onClick={handleSetActiveGallery(GalleryType.MEDIA)} variant="nav">Médias Sociaux</Button>
-          <Button onClick={handleSetActiveGallery(GalleryType.ILLUSTRATIONS)} variant="nav">Illustrations</Button>
-          <Button onClick={handleSetActiveGallery(GalleryType.MOTION)} variant="nav">Motion Design</Button>
+          <Button isActive={activeGallery === GalleryType.GRAPHISM} onClick={handleSetActiveGallery(GalleryType.GRAPHISM)} variant="nav">Graphisme</Button>
+          <Button isActive={activeGallery === GalleryType.COMMUNICATION} onClick={handleSetActiveGallery(GalleryType.COMMUNICATION)} variant="nav">Communication</Button>
+          <Button isActive={activeGallery === GalleryType.MEDIA} onClick={handleSetActiveGallery(GalleryType.MEDIA)} variant="nav">Médias Sociaux</Button>
+          <Button isActive={activeGallery === GalleryType.ILLUSTRATIONS} onClick={handleSetActiveGallery(GalleryType.ILLUSTRATIONS)} variant="nav">Illustrations</Button>
+          <Button isActive={activeGallery === GalleryType.MOTION} onClick={handleSetActiveGallery(GalleryType.MOTION)} variant="nav">Motion Design</Button>
         </div>
+        <div className="flex-1 lg:hidden" />
+        <select className="lg:hidden w-fit bg-secondary text-tertiary py-2 px-2 border-r-8 border-secondary rounded-md text-lg" value={activeGallery} onChange={(e) => setActiveGallery(e.target.value as GalleryType)}>
+          <option value={GalleryType.GRAPHISM}>Graphisme</option>
+          <option value={GalleryType.COMMUNICATION}>Communication</option>
+          <option value={GalleryType.MEDIA}>Médias Sociaux</option>
+          <option value={GalleryType.ILLUSTRATIONS}>Illustrations</option>
+          <option value={GalleryType.MOTION}>Motion Design</option>
+        </select>
       </div>
       <div className="col-span-2 justify-self-end w-full">
         {displayGallery[activeGallery]}

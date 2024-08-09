@@ -76,6 +76,6 @@
       @apply font-paragraph;
     }
     .gallery-item {
-      @apply aspect-square w-full bg-secondary-foreground;
+      @apply aspect-square w-full;
     }
   }

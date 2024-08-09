@@ -17,10 +17,10 @@ export const Hero = () => {
           </div>
         <div className="mt-16 flex flex-col sm:flex-row gap-2">
           <a href='https://www.fnac.com/livre-numerique/a20763483/Solenne-Dauriac-Perfectly-Wrong-for-Me#FORMAT=ebook%20(ePub)' target="_blank" rel="noreferrer">
-            <Button size="lg" variant="secondary" className="text-2xl py-6">J&apos;ai écrit un livre</Button>
+            <Button size="lg" variant="secondary" className="text-2xl py-6 w-full md:w-fit">J&apos;ai écrit un livre</Button>
           </a>
           <a href='#contact'>
-            <Button size="lg" className="text-2xl py-6">Contactez-moi !</Button>
+            <Button size="lg" className="text-2xl py-6 w-full md:w-fit">Contactez-moi !</Button>
           </a>
           </div>
       </div>
