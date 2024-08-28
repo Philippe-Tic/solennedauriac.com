@@ -1,3 +1,0 @@
----
-images: ['mainsquare/macklemore.jpg']
----

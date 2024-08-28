@@ -1,8 +1,7 @@
 ---
-title: 'Affiches Mainsquare Festival 2019 à Arras'
-description: 'Petite description liée a la commande, au sujet, a la création du projet, bref on met du contexte sur plusieurs ligne et ça commence à se voir que j’essaye de meubler.'
-projectTypes: 'Concours de graphisme'
-softwareUsed: 'Adobe Photoshop, Adobe Illustrator'
-mainImage: 'macklemore.jpg'
-otherImages: ['angele.jpg', 'christine.jpg', 'damso.jpg', 'jain.jpg', 'mgarrix.jpg']
+title: 'Mainsquare Festival'
+slug: "graphisme"
+description: "Dans le cadre d'un concours pour le Mainsquare Festival, j'ai réalisé plusieurs affiches mettant à l'honneur les artistes de la programmation 2019. J'ai remporté ce concours grâce à mon affiche représentant l'artiste Macklemore, ce qui m'a permise de voir mon affiche dans les rues d'Arras, ainsi qu'au sein du festival."
+mainImage: 'Affiche_mainsquare_1.jpg'
+otherImages: ['Affiche_mainsquare_2.jpg', 'Affiche_mainsquare_3.jpg', 'Affiche_mainsquare_4.jpg', 'Affiche_mainsquare_5.jpg', 'Affiche_mainsquare_6.jpg']
 ---

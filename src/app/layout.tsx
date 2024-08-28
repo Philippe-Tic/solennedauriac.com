@@ -3,15 +3,11 @@ import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
 import { Libre_Caslon_Text } from 'next/font/google';
 
+import { Metadata } from "next";
 import localFont from 'next/font/local';
 
 const bearskin = localFont({
   src: './Bearskin Regular.woff',
-  display: 'swap',
-})
-
-const mono = localFont({
-  src: './ANDALEMO.woff',
   display: 'swap',
 })
 
@@ -21,6 +17,11 @@ const livre_caslon = Libre_Caslon_Text({
   variable: '--font-libre-caslon-text',
   weight: "400",
 })
+
+export const metadata: Metadata = {
+  title: 'Solenne Dauriac',
+  description: 'Freelance Graphiste et Communicante',
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
